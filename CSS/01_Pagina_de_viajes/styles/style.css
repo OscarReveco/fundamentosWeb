@@ -14,7 +14,7 @@ padding: 0; /* elimina todo el relleno de los elementos */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
 }
 /* Estilo de encabezado */
-head {
+header{
     background-color: #333; /* Establece el color de fondo */
     color: #fff; /* Establece el color del texto */
     padding: 20px 0; /* Añade relleno superior e inferior */
@@ -61,10 +61,32 @@ section {
 }
 /* Estilo cuando pasa mouse sobre el boton */
 .btn:hover{
-    background-color: #0056b3;
+    background-color: #0056b3; /* Establece el color del fondo en el  hover boton */
+}
+
+.destinos-container{
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos */
+    flex-wrap: wrap; /* Si los elementos no caben en las mismas linea agrea una nueva linea con estos elementos extras */
+}
+.destino{
+    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+    margin-buttom:20px ; /* Define el margen inferior */
+    text-align: center; /* Centra el texto */
+}
+
+.destino img{
+    width: 100%; /* Establece el ancho de la imagen ajustandola al espacio que la contiene */
+    border-radius: 8px; /* Agrega esquinas redondeadas */
+}
+.destino h3{
+    margin-top: 10px; /* Agraga margen entre imagen y h3 */
+}
+.destino p{
+    margin-top: 10px; /* Agrega distancia superior entre h3 y p */
 }
 footer{
-    background-color: #333;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #333; /* Establece color fondo de footer */
+    text-align: center; /* Establece color de texto de footer */
+    padding: 20px 0; /* Añade relleno superior e inferior */
 }
